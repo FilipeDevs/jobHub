@@ -2,12 +2,10 @@
 
 namespace App\Models;
 
-class Listing
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Listing extends Model
 {
-
-    public static function all()
-    {
-
-    }
-
+    use HasFactory;
 }
