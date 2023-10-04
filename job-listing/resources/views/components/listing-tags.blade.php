@@ -1,9 +1,9 @@
 @props(['tagsCsv'])
 
 @php
-    
-    $tags = explode(',', $tagsCsv); // split the tags array
-    
+
+    $tags = explode(', ', $tagsCsv); // split the tags array
+
 @endphp
 
 <ul class="flex">
