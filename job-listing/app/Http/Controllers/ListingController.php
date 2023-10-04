@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 
 class ListingController extends Controller
 {
-    // Get and show all listings (order by post time, latest job post appear first)
+    // Get and show all listings (order by post time, latest job post appear first + pagination)
     public function index()
     {
 
         return view('listings.index', [
-            'listings' => Listing::latest()->filter(request(['tag', 'search']))->get()
+            'listings' => Listing::latest()->filter(request(['tag', 'search']))->paginate(6)
         ]);
     }
 
