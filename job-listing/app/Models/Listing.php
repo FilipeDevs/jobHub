@@ -10,7 +10,8 @@ class Listing extends Model
     use HasFactory;
 
     // Mass assignement disable
-    protected $fillable = ['title', 'company', 'location', 'website', 'email', 'tags', 'description'];
+    // 1st option is to manually write the fields or just tweak AppServiceProvider boot()
+    // protected $fillable = ['title', 'company', 'location', 'website', 'email', 'tags', 'description', 'logo'];
 
     public function scopeFilter($query, array $filters)
     {
