@@ -29,4 +29,22 @@ class ListingController extends Controller
     {
         return view('listings.create');
     }
+
+    // Store job post data
+    public function store(Request $request)
+    {
+        $formFields = $request->validate([
+            'title' => 'required',
+            'company' => 'required',
+            'location' => 'required',
+            'website' => 'required',
+            'email' => ['required', 'email'],
+            'tags' => 'required',
+            'description' => 'required'
+        ]);
+
+        Listing::create($formFields);
+
+        return redirect('/');
+    }
 }

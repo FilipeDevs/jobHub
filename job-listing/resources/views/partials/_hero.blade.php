@@ -1,5 +1,5 @@
 <section class="relative h-72 bg-laravel flex flex-col justify-center align-center text-center space-y-4 mb-4">
-    <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-no-repeat bg-center"
+    <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-no-repeat bg-center bg-contain"
         style="background-image: url('images/laravel-logo.png')"></div>
 
     <div class="z-10">
@@ -12,7 +12,7 @@
         <div>
             <a href="register.html"
                 class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black">Sign
-                Up to post a job</a>
+                Up to post a</a>
         </div>
     </div>
 </section>
