@@ -45,6 +45,8 @@ class ListingController extends Controller
 
         Listing::create($formFields);
 
-        return redirect('/');
+
+
+        return redirect('/')->with('message', 'Job was posted sucessfully !');
     }
 }
