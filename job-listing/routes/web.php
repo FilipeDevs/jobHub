@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ListingController;
-use App\Models\Listing;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 // All job posts
@@ -24,3 +24,9 @@ Route::delete('/listings/{listing}', [ListingController::class, 'delete']);
 
 // Single job Post
 Route::get('listings/{listing}', [ListingController::class, 'show']);
+
+// Show Register Create Form
+Route::get('/register', [UserController::class, 'create']);
+
+// Create New User
+Route::post('/users', [UserController::class, 'store']);
