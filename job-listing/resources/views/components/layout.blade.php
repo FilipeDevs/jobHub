@@ -16,7 +16,7 @@
             theme: {
                 extend: {
                     colors: {
-                        laravel: "#ef3b2d",
+                        coolBlue: "#1d4ed8",
                     },
                 },
             },
@@ -26,14 +26,14 @@
 </head>
 
 <body class="mb-48">
-    <nav class="flex justify-between items-center mb-4">
-        <a href="/"><img class="w-24" src="{{ asset('images/logo.png') }}" alt="" class="logo" /></a>
+    <nav class="flex justify-between items-center mb-4 p-6">
+        <a href="/" class="hover:text-coolBlue text-lg"><i class="fas fa-home"></i> HOME</a>
         <ul class="flex space-x-6 mr-6 text-lg">
             <li>
-                <a href="/register" class="hover:text-laravel"><i class="fa-solid fa-user-plus"></i> Register</a>
+                <a href="/register" class="hover:text-coolBlue"><i class="fa-solid fa-user-plus"></i> Register</a>
             </li>
             <li>
-                <a href="/login" class="hover:text-laravel"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <a href="/login" class="hover:text-coolBlue"><i class="fa-solid fa-arrow-right-to-bracket"></i>
                     Login</a>
             </li>
         </ul>
@@ -42,7 +42,7 @@
         {{ $slot }}
     </main>
     <footer
-        class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center">
+        class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-coolBlue text-white h-24 mt-24 opacity-90 md:justify-center">
         <p class="ml-2">Developed by Filipe Pereira 😎</p>
 
         <a href="/listings/create" class="absolute top-1/3 right-10 bg-black text-white py-2 px-5">Post a Job</a>

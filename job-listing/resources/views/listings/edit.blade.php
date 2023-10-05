@@ -95,7 +95,7 @@
             </div>
 
             <div class="mb-6">
-                <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
+                <button class="bg-coolBlue text-white rounded py-2 px-4 hover:bg-black">
                     Update Job Post
                 </button>
 
