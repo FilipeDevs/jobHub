@@ -13,5 +13,11 @@ Route::get('/listings/create', [ListingController::class, 'create']);
 // Store job post
 Route::post('listings', [ListingController::class, 'store']);
 
-// Single job post
+// Show edit Form
+Route::get('/listings/{listing}/edit', [ListingController::class, 'edit']);
+
+// Update Job Post
+Route::put('/listings/{listing}', [ListingController::class, 'update']);
+
+// Single job Post
 Route::get('listings/{listing}', [ListingController::class, 'show']);
