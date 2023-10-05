@@ -19,5 +19,8 @@ Route::get('/listings/{listing}/edit', [ListingController::class, 'edit']);
 // Update Job Post
 Route::put('/listings/{listing}', [ListingController::class, 'update']);
 
+// Delete Job Post
+Route::delete('/listings/{listing}', [ListingController::class, 'delete']);
+
 // Single job Post
 Route::get('listings/{listing}', [ListingController::class, 'show']);
