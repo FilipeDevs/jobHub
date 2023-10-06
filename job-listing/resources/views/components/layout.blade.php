@@ -39,6 +39,14 @@
                     <a href="/listings/manage" class="hover:text-coolBlue"><i class="fa-solid fa-gear"></i> Manage Job
                         Posts</a>
                 </li>
+                <li>
+                    <form class="inline hover:text-coolBlue" method="POST" action="/logout">
+                        @csrf
+                        <button type="submit">
+                            <i class="fa-solid fa-door-closed"></i> Logout
+                        </button>
+                    </form>
+                </li>
             @else
                 <li>
                     <a href="/register" class="hover:text-coolBlue"><i class="fa-solid fa-user-plus"></i> Register</a>
