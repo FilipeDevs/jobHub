@@ -29,13 +29,25 @@
     <nav class="flex justify-between items-center mb-4 p-6">
         <a href="/" class="hover:text-coolBlue text-lg"><i class="fas fa-home"></i> HOME</a>
         <ul class="flex space-x-6 mr-6 text-lg">
-            <li>
-                <a href="/register" class="hover:text-coolBlue"><i class="fa-solid fa-user-plus"></i> Register</a>
-            </li>
-            <li>
-                <a href="/login" class="hover:text-coolBlue"><i class="fa-solid fa-arrow-right-to-bracket"></i>
-                    Login</a>
-            </li>
+            @auth
+                <li>
+                    <span class="font-bold uppercasse">
+                        Welcome {{ auth()->user()->name }} !
+                    </span>
+                </li>
+                <li>
+                    <a href="/listings/manage" class="hover:text-coolBlue"><i class="fa-solid fa-gear"></i> Manage Job
+                        Posts</a>
+                </li>
+            @else
+                <li>
+                    <a href="/register" class="hover:text-coolBlue"><i class="fa-solid fa-user-plus"></i> Register</a>
+                </li>
+                <li>
+                    <a href="/login" class="hover:text-coolBlue"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        Login</a>
+                </li>
+            @endauth
         </ul>
     </nav>
     <main>
