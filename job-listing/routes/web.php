@@ -22,6 +22,9 @@ Route::put('/listings/{listing}', [ListingController::class, 'update'])->middlew
 // Delete Job Post
 Route::delete('/listings/{listing}', [ListingController::class, 'delete'])->middleware('auth');
 
+// Manage job posts
+Route::get('/listings/manage', [ListingController::class, 'manage'])->middleware('auth');
+
 // Single job Post
 Route::get('listings/{listing}', [ListingController::class, 'show']);
 
