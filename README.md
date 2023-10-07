@@ -14,9 +14,29 @@ A web app for listing/posting jobs.
 
 ### Project Root
 
-Upon cloning the project, cd into the laravel project by running the command :
+Upon cloning the project, navigate into the laravel project root by running the command :
 ```
 cd job-listing
+```
+
+### Install Dependecies
+
+To install the dependecies, run the following command :
+
+```
+composer install
+```
+
+### Create environment file
+
+Copy the `.env.example` file to `.env` (still in the project root folder)
+
+### Generate application key
+
+This key will be used to encrypt data (Sessions, CSRF tokens and cookies). Run the following command : 
+
+```sh
+php artisan key:generate
 ```
 
 ### Database 
@@ -37,7 +57,7 @@ php artisan db:seed
 ```
 
 ### File Uploading
-When uploading job post files (in this case images), they go to "storage/app/public". Create a symlink with the following command to make them publicly accessible : 
+When uploading job post files (in this case images), they go to `storage/app/public`. Create a symlink with the following command to make them publicly accessible : 
 ```
 php artisan storage:link
 ```
