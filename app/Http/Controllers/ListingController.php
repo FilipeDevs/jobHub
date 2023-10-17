@@ -57,6 +57,12 @@ class ListingController extends Controller
     // Show edit Form
     public function edit(Listing $listing)
     {
+
+        // Make sure logged in user is owner before updating
+        if ($listing->user_id != auth()->id()) {
+            abort(403);
+        }
+
         return view('listings.edit', ['listing' => $listing]);
     }
 
