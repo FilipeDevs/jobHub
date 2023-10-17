@@ -12,13 +12,6 @@ A web app for listing/posting jobs.
 
 ## Usage
 
-### Project Root
-
-Upon cloning the project, navigate into the laravel project root by running the command :
-```
-cd job-listing
-```
-
 ### Install Dependecies
 
 To install the dependecies, run the following command :
@@ -29,7 +22,7 @@ composer install
 
 ### Create environment file
 
-Copy the `.env.example` file to `.env` (still in the project root folder)
+Copy the `.env.example` file to `.env`
 
 ### Generate application key
 
