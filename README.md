@@ -1,14 +1,27 @@
-# Job Listing Web App
-A web app for listing/posting jobs. 
+# Job listing Web App
 
-## Prerequisites
-  * Composer
-  * MySQL
+A minimalistic job post web application developed in Laravel. This application allows employers to post job listings, and job seekers to explore and apply for available positions.
 
-## Tech Stack/Libraries
-  * Laravel v10
-  * TailwindCSS v3.3
-  * Alpine.js
+## Tech Stack
+
+* Laravel
+* TailwindCSS
+* AlpineJs
+* MySQL
+
+## Features
+
+- Authentication System:
+    * Secure user authentication for authorized access.
+
+- Job Posting:
+    * Employers can create, manage, and publish job listings with essential details.
+
+- Job Search:
+    * Job seekers can explore available positions. They can refine search results using tag filters.
+## Screenshots
+
+<img src="./demo/home.png" >
 
 ## Usage
 
