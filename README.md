@@ -1,4 +1,4 @@
-# Job listing Web App
+# JobHub
 
 A minimalistic job post web application developed in Laravel. This application allows employers to post job listings, and job seekers to explore and apply for available positions.
 
